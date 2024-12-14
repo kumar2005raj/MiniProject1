@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Digital Business Card</h1>
+        <form id="businessCardForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="title" placeholder="Your Title" required>
+            <input type="text" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <input type="text" id="website" placeholder="Your Website" required>
+            <button type="submit">Generate Card</button>
+        </form>
+        <div id="card" class="card hidden">
+            <h2 id="cardName"></h2>
+            <p id="cardTitle"></p>
+            <p id="cardEmail"></p>
+            <p id="cardPhone"></p>
+            <p id="cardWebsite"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
